@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/components/index.css" />
+    <link rel="stylesheet" href="/PortfolioATLP/components/index.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="hero">
+    <section class="hero" id="hero">
       <div class="nav-bar">
         <div class="log">
-          <img src="/images/Logo.jpg" alt="" class="logo-image" />
-          <span class="log-title">Tesor</span>
+          <img src="/PortfolioATLP/images/Logo.jpg" alt="" class="logo-image" />
+          <span class="log-title">Tresor</span>
         </div>
         <div class="nav-content">
-          <p class="nav-content-">Home</p>
-          <p class="nav-content-">About us</p>
-          <p class="nav-content-">Contact us</p>
-          <p class="nav-content-">Portfolio</p>
-          <p class="nav-content-">Blog</p>
-          <div class="button-signup">
+          <a href="#hero" class="nav-content-home">Home</a>
+          <a href="#about" class="nav-content-about">About us</a>
+          <a href="#contact" class="nav-content-contact">Contact us</a>
+          <a href="" class="nav-content-portfolio">Portfolio</a>
+          <a href="#blogs" class="nav-content-blog">Blog</a>
+          <a   href="/PortfolioATLP/components/Signup.html" class="button-signup">
             <button class=btn-signup>Signup</button>
-          </div>
+          </a>
         </div>
       </div>
       <div class="content">
@@ -30,19 +30,19 @@
           <h3 class="occupation">Software Developer</h3>
           <div class="social-media">
             <div class="social-media-icons">
-            <img src="/images/instagram.png" alt="" />
-            <img src="/images/faceBook.png" alt="" />
-            <img src="/images/Twiter.png" alt="" />
-            <img src="/images/youtube.png" alt="" />
-            <img src="/images/linkedIn.png" alt="" />
+            <img src="/PortfolioATLP/images/instagram.png" alt="" class="insta"/>
+            <img src="/PortfolioATLP/images/faceBook.png" alt=""class="face" />
+            <img src="/PortfolioATLP/images/youtube.png" alt="" class="you"/>
+            <img src="/PortfolioATLP/images/Twiter.png" alt=""class="twi" />
+            <img src="/PortfolioATLP/images/linkedIn.png" alt="" class="lin"/>
             </div>
           </div>
         </div>
         <div class="splash-image">
-          <img src="/images/profile.jpg" alt="" class="my-image"/>
+          <img src="/PortfolioATLP/images/profile.jpg" alt="" class="my-image"/>
         </div>
         <div class="extended">
-            <p>
+            <p class="extended-par">
                 A dedicated software developer with passion to create useful and digital Experience.
             </p>
             <div class="button-start">
@@ -51,7 +51,262 @@
 
         </div>
       </div>
+    </section>
+    <section class="contact-us" id="contact">
+
+        <div class="left">
+          <h1 class="contact-par">
+            CONTACT
+          </h1>
+          <hr class="line">
+          <P class="intro">Feel Free to reach out For us In case you  have  any  Inquiries, we
+            can reach out  to you.</P>
+            <div class="contact-objects">
+              <div class="buttom-contact">
+                <img src="/PortfolioATLP/images/call_ic_icon.svg" alt="" class="icons">
+                <p>
+                  +250781605346
+                </p>
+  
+              </div>
+              <div class="buttom-contact">
+                <img src="/PortfolioATLP/images/email.svg" alt="" class="icons">
+                <p>
+                  tresorxavier@gmail.com
+                </p>
+                
+              </div>
+            </div>
+        </div>
+        <div class="right">
+          <p class="right-intro">Love to hear from you, get In touch 👋</p>
+            
+          <div class="form-contact">
+            <div class="fnameEmail">
+              <div class="form-group-fname">
+                <label for="fullName" class="labelf">Full Name</label>
+                <input type="text"  id="fullName" class="inp-form" >
+              </div>
+              <div class="form-group-email">
+                <label for="email" class="labelE" > Email</label>
+                <input type="email" id="email" class="inp-form">
+              </div>
+            </div>
+          <div class="form-group-password">
+            <label for="fullName">Password</label>
+            <input type="password"  class="inp-form">
+          </div>
+          <div class="form-group-message">
+            <label for="fullName">Message</label>
+            <textarea rows="5" cols="50" class="message"></textarea>
+          </div>
+          <button class="btn-contact">Send Message</button>
+        </div>
+          </div>
+
+    </section>
+
+    <section class="about" id="about">
+      <div   class="mine">
+        <img src="/PortfolioATLP/images/My photo.jpg" alt="" class="photo-me">
+        <div class="section-left">
+          <h1 class="header-about">ABOUT ME</h1>
+          <p class="description-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae harum officia incidunt, odio magni animi? Illo eos in, enim consequuntur ipsum sed praesentium voluptates modi cumque corrupti quos debitis ipsam voluptatibus possimus dolorum commodi at, dolores doloremque accusamus odit illum aliquam quod.</p>
+          <hr class="line-stat">
+          <div class="container-stat">
+            <div class="stats">
+              <p class="statsp">2+</p>
+              <p class="description">Work with Companies</p>
+            </div>
+            <div class="stats">
+              <p class="statsp">1+</p>
+              <p class="description">Work with Companies</p>
+            </div>
+            <div class="stats">
+              <p class="statsp">10+</p>
+              <p class="description">Satisfied Clients</p>
+            </div>
+          </div>
+          <hr class="line-stat">
+          <button class="btn-hire">Hire Me</button>
+        </div>
+      </div>
+    </section>
+    <section  class="blogs" id="blogs">
+      <h1 class="trendings">TRENGING BLOG...</h1>
+      <div class="allcards">
+       
+        <div class="card">
+          <img src="/PortfolioATLP/images/dubaireal.png" alt="" class="image-card">
+          <div class="description">
+            <p class="descriptio-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non fugiat unde consectetur in at exercitationem tempora reprehenderit laboriosam sit blanditiis, ratione quae provident, aliquam optio architecto quos. Velit, quam.</p>
+          </div>
+          <div class="log-des">
+            <img src="/PortfolioATLP/images/Logo.jpg" alt="" class="profile-photo">
+            <p class="authordescription"> Mr.Tresor</p>
+            <button class="btn-arrow"><p class="auth-logo">More</p></button>
+          </div> 
+        </div>
+        <div class="card">
+          <img src="/PortfolioATLP/images/ricardo-gomez-angel-opFPVxMRpP8-unsplash.jpg" alt="" class="image-card">
+          <div class="description">
+            <p class="descriptio-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non fugiat unde consectetur in at exercitationem tempora reprehenderit laboriosam sit blanditiis, ratione quae provident, aliquam optio architecto quos. Velit, quam.</p>
+          </div>
+          <div class="log-des">
+            <img src="/PortfolioATLP/images/Logo.jpg" alt="" class="profile-photo">
+            <p class="authordescription"> Mr.Tresor</p>
+            <button class="btn-arrow"><p class="auth-logo">More</p></button>
+          </div> 
+        </div>
+        <div class="card">
+          <img src="/PortfolioATLP/images/Rectangle 45.png" alt="" class="image-card">
+          <div class="description">
+            <p class="descriptio-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non fugiat unde consectetur in at exercitationem tempora reprehenderit laboriosam sit blanditiis, ratione quae provident, aliquam optio architecto quos. Velit, quam.</p>
+          </div>
+          <div class="log-des">
+            <img src="/PortfolioATLP/images/Logo.jpg" alt="" class="profile-photo">
+            <p class="authordescription"> Mr.Tresor</p>
+            <button class="btn-arrow"><p class="auth-logo">More</p></button>
+          </div> 
+        </div>
+        <div class="card">
+          <img src="/PortfolioATLP/images/collov-home-design-4_jQL4JCS98-unsplash.jpg" alt="" class="image-card">
+          <div class="description">
+            <p class="descriptio-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non fugiat unde consectetur in at exercitationem tempora reprehenderit laboriosam sit blanditiis, ratione quae provident, aliquam optio architecto quos. Velit, quam.</p>
+          </div>
+          <div class="log-des">
+            <img src="/PortfolioATLP/images/Logo.jpg" alt="" class="profile-photo">
+            <p class="authordescription"> Mr.Tresor</p>
+            <button class="btn-arrow"><p class="auth-logo">More</p></button>
+          </div> 
+        </div>
+        <div class="card">
+          <img src="/PortfolioATLP/images/asr-design-studio-uJPOfMyCRxc-unsplash.jpg" alt="" class="image-card">
+          <div class="description">
+            <p class="descriptio-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non fugiat unde consectetur in at exercitationem tempora reprehenderit laboriosam sit blanditiis, ratione quae provident, aliquam optio architecto quos. Velit, quam.</p>
+          </div>
+          <div class="log-des">
+            <img src="/PortfolioATLP/images/Logo.jpg" alt="" class="profile-photo">
+            <p class="authordescription"> Mr.Tresor</p>
+            <button class="btn-arrow"><p class="auth-logo">More</p></button>
+          </div> 
+        </div>
+        <div class="card">
+          <img src="/PortfolioATLP/images/matt-botsford-OKLqGsCT8qs-unsplash.jpg" alt="" class="image-card">
+          <div class="description">
+            <p class="descriptio-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non fugiat unde consectetur in at exercitationem tempora reprehenderit laboriosam sit blanditiis, ratione quae provident, aliquam optio architecto quos. Velit, quam.</p>
+          </div>
+          <div class="log-des">
+            <img src="/PortfolioATLP/images/Logo.jpg" alt="" class="profile-photo">
+            <p class="authordescription"> Mr.Tresor</p>
+            <button class="btn-arrow"><p class="auth-logo">More</p></button>
+          </div> 
+        </div><div class="card">
+          <img src="/PortfolioATLP/images/Rectangle 42.png" alt="" class="image-card">
+          <div class="description">
+            <p class="descriptio-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non fugiat unde consectetur in at exercitationem tempora reprehenderit laboriosam sit blanditiis, ratione quae provident, aliquam optio architecto quos. Velit, quam.</p>
+          </div>
+          <div class="log-des">
+            <img src="/PortfolioATLP/images/Logo.jpg" alt="" class="profile-photo">
+            <p class="authordescription"> Mr.Tresor</p>
+            <button class="btn-arrow"><p class="auth-logo">More</p></button>
+          </div> 
+        </div>
+        <div class="card">
+          <img src="/PortfolioATLP/images/collov-home-design-4_jQL4JCS98-unsplash.jpg" alt="" class="image-card">
+          <div class="description">
+            <p class="descriptio-card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque non fugiat unde consectetur in at exercitationem tempora reprehenderit laboriosam sit blanditiis, ratione quae provident, aliquam optio architecto quos. Velit, quam.</p>
+          </div>
+          <div class="log-des">
+            <img src="/PortfolioATLP/images/Logo.jpg" alt="" class="profile-photo">
+            <p class="authordescription"> Mr.Tresor</p>
+            <button class="btn-arrow"><p class="auth-logo">More</p></button>
+          </div> 
+        </div>
+      </div>
+        
+    </section>
+
+    <section class = "footerclass" id="footer">
+     <div class="sec1">
+      <h1 class="header-footer"> About </h1>
+      <p class="describeMe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia inventore repudiandae, non recusandae maiores unde fugit ducimus? Beatae sed architecto incidunt, rerum rem praesentium. Soluta necessitatibus voluptates, temporibus excepturi repellat, cupiditate tenetur numquam accusantium ex dolores, harum quo laboriosam aliquam.</p>
+     </div>
+     <div class="sec2">
+      <h1 class="header-footer"> Links </h1>
+        <div class="about-footer">
+          <div class="pair">
+            <img src="/PortfolioATLP/images/black arrow.png" alt="" class="footericon">
+          <p>Home</p>
+          </div>
+          <div class="pair">
+            <img src="/PortfolioATLP/images/black arrow.png" alt="" class="footericon">
+          <p>Contact us</p>
+          </div>
+          <div class="pair">
+            <img src="/PortfolioATLP/images/black arrow.png" alt="" class="footericon">
+          <p>About us</p>
+          </div>
+          <div class="pair">
+            <img src="/PortfolioATLP/images/black arrow.png" alt="" class="footericon">
+          <p>Blog</p>
+          </div>
+        </div>
+     </div>
+
+      <div class="sec3">
+        <h1 class="header-footer"> More</h1>
+        <div class="more-footer">
+          <div class="pair">
+            <img src="/PortfolioATLP/images/black arrow.png" alt="" class="footericon">
+          <p>Home</p>
+          </div>
+          <div class="pair">
+            <img src="/PortfolioATLP/images/black arrow.png" alt="" class="footericon">
+          <p>Contact us</p>
+          </div>
+          <div class="pair">
+            <img src="/PortfolioATLP/images/black arrow.png" alt="" class="footericon">
+          <p>About us</p>
+          </div>
+          <div class="pair">
+            <img src="/PortfolioATLP/images/black arrow.png" alt="" class="footericon">
+            <p>Blog</p>
+          </div>
+        </div>
+      </div>
+      <div class="sec4">
+        <h1 class="header-footer"> Have Any Querry</h1>
+        <div class="location-footer">
+          <div class="footer-last">
+            <img src="/PortfolioATLP/images/location_icon.svg" alt="" class="footer-last-icon">
+            <p class="name">11 KK ST, Kigali</p>
+          </div>
+          <div class="footer-last">
+            <img src="/PortfolioATLP/images/call_ic_icon.svg" alt="" class="footer-last-icon">
+            <p class="name">+25078160346</p>
+          </div>
+          <div class="footer-last">
+            <img src="/PortfolioATLP/images/email.svg" alt="" class="footer-last-icon">
+            <p class="name">tresorxavier16@gmail</p>
+          </div>
+          <div class="footer-last">
+            <div class="social-media">
+              <div class="social-medias">
+              <img src="/PortfolioATLP/images/instagram.png" alt="" class="insta"/>
+              <img src="/PortfolioATLP/images/faceBook.png" alt=""class="face" />
+              <img src="/PortfolioATLP/images/youtube.png" alt="" class="you"/>
+              <img src="/PortfolioATLP/images/Twiter.png" alt=""class="twi" />
+              <img src="/PortfolioATLP/images/linkedIn.png" alt="" class="lin"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <div class="footer-copyrigths">
+      ©️ copyright Reserved by <span class="name-Span"> Tresor Xavier</span>
     </div>
-    <div class="contact-us"></div>
   </body>
 </html>
