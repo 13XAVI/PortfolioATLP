@@ -1,0 +1,251 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.all-content {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-section, .right-section {
+    padding: 0px;
+}
+
+.left-section {
+    width: 300p;
+    min-height: 150vh;
+}
+
+.logo-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.pair {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #f3f3f3;
+    padding: 10px 0;
+}
+
+.icon, .icon-qerry {
+    margin-right: 10px;
+}
+
+.header-title, .header-title-logout, .dates {
+    color: #B8B66E;
+}
+
+.right-section {
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.row{
+    margin-left: 60px;
+}
+.row-table{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.card-row {
+    display: flex;
+    margin-right: 10px;
+    gap: 0px;
+    margin-bottom: 20px;
+}
+
+.card1, .card2, .card3 {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+.number {
+    font-size: 2em;
+    color: #333;
+}
+
+.card-image {
+    width: 50px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.label {
+    display: block;
+    margin-bottom: .5em;
+}
+.row{
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 950px;
+    height: 60vh;
+    margin-top: 6em;
+    margin-left: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.9;
+    transition: 0.3s;
+
+}
+.User-header{
+    color: #B8B66E;
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+.row-1,.row-sec,.row3{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+.row3 select{
+
+   width: 400px;
+}
+.button-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-action-add, .btn-action-update{
+    background-color: #B8B66E;
+    margin-top: 2em;
+    height: 32px;
+    border: none;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #fff;
+    transition: 0.3s;
+    width: 150px;
+
+}
+
+.btn-action-add:hover{
+
+}
+
+.form-control {
+    width: 400px;
+    padding: .5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #B8B66E;
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    background-color: #B8B66E;
+}
+
+.btn-danger {
+    background-color: red;
+}
+
+.btn-Edit {
+    background-color: green;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table, .table th, .table td {
+    border: 1px solid #ddd;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #B8B66E;
+    color: #fff;
+}
+
+
+.action-icon {
+    width: 30px;
+    height: 20px;
+}
+
+.btn-action {
+    background-color: #0B0D11;
+    height: 32px;
+    border-radius: 20px; 
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    color: #B8B66E;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.btn-action:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 15px 0 #006699;
+  opacity: 1;
+}
+.btn-danger{
+    margin-right: 20px;
+    border-radius: 10px;
+    width: 75px;
+}
+.btn-Edit{
+    border-radius: 10px;
+    width: 75px;
+}
+.container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+#crudTable{
+    margin-bottom: 9em;
+
+}
+.error {
+    color: red; 
+    font-size: 14px; 
+    margin-top: 5px; 
+    display: block; 
+}
+.error-success{
+    color: green; 
+      font-size: 14px; 
+      margin-top: 5px; 
+      display: block; 
+  }

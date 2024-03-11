@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300..800&family=Poppins:wght@100;200;300&family=Raleway:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300..800&family=Poppins:wght@100;200;300&family=Raleway:ital,wght@0,200;1,200&family=Kaushan+Script&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    
+    
+} 
+
+.nav-bar a:hover { 
+    color: #B8B66E;
+    cursor: pointer;
+}
+
+.nav-bar a:hover::after { 
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #B8B66E;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+
+
+.content{
+    display: flex;
+    height: 100vh;
+    margin-top: 3px;
+    align-items: center;
+    gap: 1em;
+}
+
+
+.nav-content-home,
+.nav-content-about,
+.nav-content-contact,
+.nav-content-portfolio,
+.nav-content-blog{
+text-decoration: none;
+color: #0B0D11;
+}
+.name-space{
+    
+flex: 1;
+flex-wrap: wrap;
+margin-left: 200px;
+
+}
+.log{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+ 
+ }
+ .log-title{
+     font-size: xx-large;
+     margin-top: 25px;
+ }
+ .logo-image{
+     align-items: center;
+ }
+ 
+ .logo-image{
+     margin-top: 30px;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     align-items: center;
+ }
+ .nav-content{
+     margin-top: 30px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     gap: 3em;
+     
+ }
+ .nav-content-home:hover,
+ .nav-content-about:hover,
+ .nav-content-contact:hover,
+ .nav-content-portfolio:hover,
+ .nav-content-blog:hover
+  {
+     color: #B8B66E;
+     cursor: pointer;
+ }
+ 
+ 
+ .button-signup{
+     margin-left: 20px;
+    cursor: pointer;
+ }
+ .btn-signup{
+     background-color: #0B0D11;
+     width: 70px;
+     height: 32px;
+     color: #B8B66E;
+     border-radius: 20px;
+     cursor: pointer;
+ }
+
+.wrapper {
+    width: 1%;
+    height: 100vh;
+    background: #F6EFE5;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Lato', sans-serif;
+}
+
+.sign-panels {
+    width: 650px;
+    background: #fff;
+    padding: 40px 80px;
+    margin: 40px auto;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 8em;
+}
+.login,.signup {
+    position: relative;
+}
+
+
+
+.title {
+    color: #9f9f9f;
+}
+
+.title span {
+    display: block;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-face,.btn-twitter {
+    color: #fff;
+    display: inline-block;
+    width: 200px;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 11px 0;
+    font-weight: 500;
+}
+
+.btn-face .fa,.btn-twitter .fa {
+    margin-right: 5px;
+}
+
+.img-icon-social{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+
+.btn-google,.btn-github{
+    border: none;
+     background: #fff;
+}
+.btn-github{
+    margin-left: 60px;
+}
+
+
+.or {
+    margin: 35px 0;
+    font-weight: 600;
+    color: #9f9f9f;
+}
+
+.or:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #cecece;
+    position: absolute;
+    margin-top: -10px;
+    z-index: 0;
+}
+
+.or span {
+    display: block;
+    background: #fff;
+    width: 50px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.sign-panels input {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background: #ededed;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    color: #7c7c7c;
+    font-weight: 500;
+}
+
+.sign-panels input:focus {
+    outline:none;
+}
+
+.sign-panels input[type="checkbox"] {
+    display: none;
+}
+
+.sign-panels input[type="checkbox"] + label {
+    display: block;
+    width: 50%;
+    text-align: left;
+    padding-left: 60px;
+    cursor: pointer;
+    color: #828282;
+    font-weight: 500;
+    margin-top: 10px;
+    float: left;
+    height: 40px;
+    padding-top: 15px;
+}
+
+.btn-signin {
+    display: inline-block;
+    width: 50%;
+    margin-top: 10px;
+    height: 40px;
+    background: #0B0D11;
+    border-radius: 50px;
+    padding: 8px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.btn-reset,.btn-member,.btn-fade {
+    font-size: 19px;
+    font-weight: 500;
+    color: #9f9f9f;
+    display: block;
+    /*width: 210px;*/
+    margin: 30px auto 0;
+    text-decoration: none;
+
+}
+.btn-member {
+    margin-top: 15px;
+}
+
+.btn-reset .fa,.btn-member .fa {
+    margin-left: 6px;
+}
+
+.notification p {
+    font-size: 20px;
+    font-weight: 600;
+    color: #9f9f9f;
+}
+
+.notification span {
+    color: #ec581e;
+}
+
+.error {
+    display: block;
+    color: #ec581e;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.error {
+    color: red; 
+    font-size: 14px; 
+    margin-top: 5px; 
+    display: block; 
+}
+.error-success{
+  color: green; 
+    font-size: 14px; 
+    margin-top: 5px; 
+    display: block; 
+}
+
+@media screen and (max-width: 768px) {
+    .sign-panels {
+        width: 90%;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .sign-panels {
+        padding: 40px 20px;
+    }
+
+    .btn-face, .btn-twitter {
+        width: 100%;
+    }
+    .btn-face {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sign-panels input[type="checkbox"] + label {
+        width: 100%;
+    }
+
+    .btn-signin {
+        width: 80%;
+    }
+
+    .title span {
+        font-size: 36px;
+    }
+
+}
+

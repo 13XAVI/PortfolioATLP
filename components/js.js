@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
         errorSpanImage.innerText = "";
         errorSpanDate.innerText = "";
         errorSpanNotification.innerText = "";
+        var blogList = []
     
         if (postTitle === "") {
             errorSpanTitle.innerText = "Please enter a post title.";
@@ -64,22 +65,34 @@ document.addEventListener("DOMContentLoaded", function() {
             postDate: postDate,
             emailNotification: emailNotification
         };
+
+        var blogList;
+        if (localStorage.getItem("Form Data") == null) {
+            blogList = [];
+        } else {
+            blogList = JSON.parse(localStorage.getItem("Form Data"));
+        }
+
+        blogList.push(formData); 
+        localStorage.setItem("Form Data", JSON.stringify(blogList));
         
-        localStorage.setItem("Form Data", JSON.stringify(formData));
         errorSuccess.innerHTML = "<br/>Data Sent successfully ";
+       
     
         const blogItem = document.querySelector(".blog-item");
-        blogItem.innerHTML = `
-            <h2 class="blog-name">${postTitle}</h2>
+        blogItem.innerHTML = blogItem.forEach((blog,index)=>{
+            `
+            "<p>" + ${index + 1} + "</p>";
+            <h2 class="blog-name">${blog.postTitle}</h2>
             <div class="image-blog">
-                <img src="${postThumbnail}" alt="" class="image-blogz">
+                <img src="${blog.postThumbnail}" alt="" class="image-blogz">
             </div>
             <div class="blog-title">
-                <p class="author-blog">${author}</p>
+                <p class="author-blog">${blog.author}</p>
             </div>
             <div class="descr">
                 <p class="descr-header">Description</p>
-                <p class="descr-paragraph">${postDescription}</p>
+                <p class="descr-paragraph">${blog.postDescription}</p>
             </div>
             <div class="icon-blogs">
                 <img src="/PortfolioATLP/images/like (1).png" alt="" class="icons-blogz">
@@ -96,5 +109,93 @@ document.addEventListener("DOMContentLoaded", function() {
                 </div>
             </div>
         `;
+        })
     });
+
+
+    function DisplayData() {
+        var blogList;
+        if (localStorage.getItem("Form Data") == null) {
+            blogList = [];
+        } else {
+            blogList = JSON.parse(localStorage.getItem("Form Data"));
+        }
+    
+        var html = "";
+        blogList.forEach(function (element, index) {
+            
+            html += "<tr>"
+            html += "<td>" + index + "</td>"
+            html += "<td>" + element.postTitle + "</td>"
+            html += "<td>" + element.postThumbnail + "</td>"
+            html += "<td>" + element.postDescription + "</td>"
+            html += "<td>" + element.postDate + "</td>"
+            html += "<td>" + element.emailNotification + "</td>"
+            html += "<td>" + element.author + "</td>"
+
+            html += "<td>" + '<button onclick="DeleteData(' +
+                index +
+                ')" class="btn-danger" id="Deleted">Delete</button><button onclick = "EditData(' +
+                index +
+                ')" class="btn-Edit" id="Edit">Edit</button ></td>';
+            html += "</tr>";
+        });
+        
+    
+        document.querySelector("#table-body").innerHTML = html
+        document.getElementById("Deleted").style.backgroundColor = "red"
+        document.querySelector("#Edit").style.backgroundColor = "green"
+        document.querySelector("#Delete").style.borderRadius = "10px"
+        document.querySelector("#Edit").style.borderRadius = "10px"
+        document.querySelector("#Edit").style.width = "75px"
+        document.querySelector("#Edit").style.marginLeft = "5px"
+    
+    }
+    
+    document.onload = DisplayData();
+
+
+
+    // function DeleteData(index) {
+       
+    //     blogList.splice(index, 1);
+    //     localStorage.setItem("Form Data", JSON.stringify(blogList)); 
+    //     DisplayData();
+    // }
+    
+    
+
+   
+    function UpdateData(index) {
+        
+    }
+
+    
+var modal = document.getElementById("myModal");
+
+
+var btn = document.getElementById("btn-action");
+
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
 });
+
+

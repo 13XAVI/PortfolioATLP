@@ -144,6 +144,12 @@
     align-items: center;
     flex-direction: row;
     color: #B8B66E;
+    
+}
+.btn-action:hover{
+  cursor: pointer;
+  animation: ease 2s ;
+
 }
 
 
