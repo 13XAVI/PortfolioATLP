@@ -106,8 +106,24 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
+.card1:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 15px 0 #006699;
+  opacity: 1;
+}.card2:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 15px 0 #913252;
+  opacity: 2;
+}
+.card3:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 15px 0 #2b2b61;
+  opacity: 2;
+}
 .card-image {
     width: 50px;
     height: 50px;
@@ -132,20 +148,32 @@
 
 .btn-action {
     background-color: #0B0D11;
-    width: 90px;
     height: 32px;
     border-radius: 20px; 
     display: flex;
     align-items: center;
     flex-direction: row;
     color: #B8B66E;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+.btn-action:hover{
+  cursor: pointer;
+  box-shadow: 0 4px 15px 0 #006699;
+  opacity: 1;
+}
+.father2{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
 }
 
 .father {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 18px;
+    gap: 1em;
 }
 
 .middle-line {
@@ -185,7 +213,8 @@ th {
     
 }
 .dates{
-    color: #cac88d;
+    color: #2b2b61;
+    font-size: larger;
 }
 .header-para{
     margin-left: 4em;
@@ -282,7 +311,6 @@ th {
     color: #B8B66E;
 }
 .icon-qerry{
-  margin-left: 30px;
   width: 15px; 
   height: 15px; 
   margin-right: 10px;
@@ -495,3 +523,43 @@ th {
     height: 20px;
   }
   
+
+
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 900px; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    align-items: center;
+  }
+  
+  .modal-content {
+    
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+ 
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="Users.css">
+    <link rel="stylesheet" href="/PortfolioATLP/components/Admin/admin.css">
+    <title>Crud App</title>
+    <script src="/PortfolioATLP/components/Admin/Users.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+        <section>
+            <div class="all-content">
+            <div class="left-section">
+                <img src="/PortfolioATLP/images/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg" alt="" class="logo-image" />
+
+                <div class="middle">
+                    <div class="first-two">
+                        <a class="pair" href="/PortfolioATLP/components/Admin/admin.html">
+                            <img src="/PortfolioATLP/images/home.png" alt="" class="icon" />
+                            <p class="header-title" href="#Home">Home</p>
+                        </a>
+                        <a class="pair" id="prof" href="/PortfolioATLP/components/Admin/Users.html">
+                            <img src="/PortfolioATLP/images/profile.png" alt="" class="icon" />
+                            <p class="header-title">Users</p>
+                        </a>
+                    </div>
+                    <a class="pair" id="help" href="/PortfolioATLP/components/Admin/querries.html">
+                        <img src="/PortfolioATLP/images/phone-call.png" alt="" class="icon-qerry" />
+                        <p class="header-title">Querries</p>
+                    </a>
+                    <a class="pair" href="/PortfolioATLP/components/Admin/blogs.html">
+                        <img src="/PortfolioATLP/images/Vector@2x.png" alt="" class="icon" />
+                        <p class="header-title">Add Blog</p>
+                    </a>
+                </div>
+                <div class="logout">
+                    <img src="/PortfolioATLP/images/logout.png" alt="" class="icon" />
+                    <a class="header-title-logout" href="/PortfolioATLP/components/User/index.html">Logout</a>
+                </div>
+            </div>
+            <div class="right-section" id="right">
+                <div class="card-row">
+                    <div class="card1">
+                        <div class="number-container">
+                            <span class="number" id="usersLength"></span>
+                        </div>
+                        <img src="/PortfolioATLP/images/pepicons-pencil--people.svg" alt="" class="card-image" />
+                        <p class="dates">All Users</p>
+                    </div>
+                    <div class="card2">
+                        <div class="number-container">
+                            <span class="number" id="BlogData"></span>
+                        </div>
+                        <img src="/PortfolioATLP/images/emojione--briefcase.svg" alt="" class="card-image" />
+                        <p class="dates">All Blogs</p>
+                    </div>
+
+                    <div class="card3">
+                        <div class="number-container">
+                            <span class="number">6</span>
+                        </div>
+                        <img src="/PortfolioATLP/images/ion--notifications.svg" alt="" class="card-image" />
+                        <p class="dates">Notifications</p>
+                    </div>
+                </div>
+                <div class="container">
+                    
+                    <div class="mb-5">
+                       
+                        <form class="row" id="myForm">
+                            <h1 class="User-header">
+                                USER FORM
+                            </h1>
+                           <div class="row-1">
+                            <div class="form-group-input ">
+                                <label for="Uname">Name</label>
+                                <input type="text" name="Uname" id="Uname" class="form-control"
+                                    placeholder="Enter Your Name">
+                                    <span class="error" id="error1"></span>
+                            </div>
+                            
+                            <div class="form-group-input ">
+                                <label for="age">Age</label>
+                                <input type="number" name="age" id="age" class="form-control"
+                                    placeholder="Enter Your Age">
+                                    <span class="error" id="error2"></span>
+                            </div>
+                           </div>
+                            
+                            <div class="row-sec">
+                                <div class="form-group-input">
+                                    <label for="address">address</label>
+                                    <input type="text" name="address" id="address" class="form-control"
+                                        placeholder="Enter Your address">
+                                        <span class="error" id="error3"></span>
+                                </div>
+                                
+                                <div class="form-group ">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" class="form-control"
+                                        placeholder="Enter Your email">
+                                        <span class="error" id="error4"></span>
+                                </div>
+                              
+                            </div>
+                            <div class="row3">
+                                <div class="form-group ">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control"
+                                        placeholder="Enter Your Password">
+                                        <span class="error" id="error5"></span>
+                                </div>
+                               <div class="form-group">
+                                <label for="role">Roles</label>
+                                <select name="role" id="role">
+                                    <option value="select">Select Role</option>
+                                    <option value="user">User</option>
+                                    <option value="admin">Admin</option>
+                                </select>
+                                <span class="error" id="error6"></span>
+                               </div>
+                            </div>
+                            
+                            <div class="button-user">
+                                <button id="submit" class="btn-action-add" >Add User</button>
+                                <button id="Update" class="btn-action-update" style="display: none;">Update User</button>
+                                
+                            </div>
+                            <span class="error-success" id="error-success"></span>
+                        </form>
+                    </div>
+
+                    <hr>
+                    <div class="row-table" align="center">
+                        <div class="col-12">
+                            <table class="table table-bordered" id="crudTable">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Age</th>
+                                        <th>address</th>
+                                        <th>Email</th>
+                                        <!-- <th>Password</th> -->
+                                        <th>Role</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        </section>
+    </main>
+
+</body>
+
+</html>
